@@ -18,12 +18,12 @@ CRUD é um acrônimo que representa as quatro operações básicas utilizadas em
 
 # Estrutura de pastas e arquivos
 
-- `README.md/` # arquivo com a documentação do projeto
-- `backend/` # pasta do backend (FastAPI, SQLAlchemy, Uvicorn, Pydantic)
-- `frontend/` # pasta do frontend (Streamlit, Requests, Pandas)
-- `docker-compose.yml/` # arquivo de configuração do docker-compose (backend, frontend, postgres)
-- `poetry.lock/` # arquivo de lock do poetry
-- `pyproject.toml` # arquivo de configuração do poetry
+- `README.md/`  arquivo com a documentação do projeto
+- `backend/`  pasta do backend (FastAPI, SQLAlchemy, Uvicorn, Pydantic)
+- `frontend/`  pasta do frontend (Streamlit, Requests, Pandas)
+- `docker-compose.yml/`  arquivo de configuração do docker-compose (backend, frontend, postgres)
+- `poetry.lock/`  arquivo de lock do poetry
+- `pyproject.toml`  arquivo de configuração do poetry
 
 # docker-compose.yml
 
@@ -69,9 +69,9 @@ Quando você executa docker-compose up, o Docker Compose lerá o arquivo docker-
 ## Backend - Estrutura de pastas e arquivos
 
 - `backend/`
-  - `Dockerfile/` # arquivo de configuração do Docker
-  - `crud.py/` # arquivo com as funções de CRUD utilizando o SQL Alchemy ORM
-  - `database.py/` # arquivo com a configuração do banco de dados utilizando o SQL Alchemy 
+  - `Dockerfile/`  arquivo de configuração do Docker
+  - `crud.py/`  arquivo com as funções de CRUD utilizando o SQL Alchemy ORM
+  - `database.py/`  arquivo com a configuração do banco de dados utilizando o SQL Alchemy 
   - `main.py/`
   - `models.py/`
   - `requirements.txt/`
