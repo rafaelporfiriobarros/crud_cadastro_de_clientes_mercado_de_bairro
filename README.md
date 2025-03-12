@@ -1,3 +1,5 @@
+![crud](images/streamlit.jpg)
+
 # CRUD: Conceito e Funcionalidades
 
 CRUD é um acrônimo que representa as quatro operações básicas utilizadas em bancos de dados e sistemas de gerenciamento de informações: **Create (Criar), Read (Ler), Update (Atualizar) e Delete (Excluir)**.
