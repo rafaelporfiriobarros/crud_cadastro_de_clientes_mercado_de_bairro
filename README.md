@@ -31,7 +31,7 @@ CRUD é um acrônimo que representa as quatro operações básicas utilizadas em
 
 Esse arquivo docker-compose.yml define uma aplicação composta por três serviços: postgres, backend e frontend, e cria uma rede chamada mynetwork.
 
-##Services:
+## Services:
 
 ### Postgres:
 
