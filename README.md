@@ -18,12 +18,14 @@ CRUD é um acrônimo que representa as quatro operações básicas utilizadas em
 
 # Estrutura de pastas e arquivos
 
-- `README.md/`  arquivo com a documentação do projeto
-- `backend/`  pasta do backend (FastAPI, SQLAlchemy, Uvicorn, Pydantic)
-- `frontend/`  pasta do frontend (Streamlit, Requests, Pandas)
-- `docker-compose.yml/`  arquivo de configuração do docker-compose (backend, frontend, postgres)
-- `poetry.lock/`  arquivo de lock do poetry
-- `pyproject.toml`  arquivo de configuração do poetry
+```bash
+├── README.md # arquivo com a documentação do projeto
+├── backend # pasta do backend (FastAPI, SQLAlchemy, Uvicorn, Pydantic)
+├── frontend # pasta do frontend (Streamlit, Requests, Pandas)
+├── docker-compose.yml # arquivo de configuração do docker-compose (backend, frontend, postgres)
+├── poetry.lock # arquivo de lock do poetry
+└── pyproject.toml # arquivo de configuração do poetry
+```
 
 # docker-compose.yml
 
@@ -67,16 +69,17 @@ Esse arquivo docker-compose.yml define uma aplicação composta por três servi�
 Quando você executa docker-compose up, o Docker Compose lerá o arquivo docker-compose.yml, criará os serviços conforme as definições especificadas e os iniciará. Isso significa que os contêineres para o banco de dados PostgreSQL, o backend e o frontend serão criados e conectados à rede mynetwork. O banco de dados será configurado com os detalhes fornecidos (nome do banco de dados, usuário e senha), e as imagens para os serviços de backend e frontend serão construídas a partir dos Dockerfiles fornecidos. Uma vez iniciados, você poderá acessar o backend através de http://localhost:8000 e o frontend através de http://localhost:8501. Os dados do banco de dados serão persistidos no volume postgres_data.
 
 ## Backend - Estrutura de pastas e arquivos
-
-- `backend/`
-  - `Dockerfile/`  arquivo de configuração do Docker
-  - `crud.py/`  arquivo com as funções de CRUD utilizando o SQL Alchemy ORM
-  - `database.py/`  arquivo com a configuração do banco de dados utilizando o SQL Alchemy 
-  - `main.py/`
-  - `models.py/`
-  - `requirements.txt/`
-  - `router.py/`
-  - `schemas.py/`
+```bash
+├── backend
+│   ├── Dockerfile # arquivo de configuração do Docker
+│   ├── crud.py # arquivo com as funções de CRUD utilizando o SQL Alchemy ORM
+│   ├── database.py # arquivo com a configuração do banco de dados utilizando o SQL Alchemy 
+│   ├── main.py
+│   ├── models.py
+│   ├── requirements.txt
+│   ├── router.py
+│   └── schemas.py
+```
 
 ## Arquivo database.py
 
